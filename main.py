@@ -15,6 +15,7 @@ if __name__ == "__main__":
     #NOTE: These do not do anything on core ComfyUI which should already have no communication with the internet, they are for custom nodes.
     os.environ['HF_HUB_DISABLE_TELEMETRY'] = '1'
     os.environ['DO_NOT_TRACK'] = '1'
+    os.environ['MIOPEN_FIND_MODE'] = '2'
 
 
 setup_logger(log_level=args.verbose, use_stdout=args.log_stdout)
